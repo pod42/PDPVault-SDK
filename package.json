@@ -1,0 +1,29 @@
+{
+  "name": "@privatedatapod/vault-sdk",
+  "version": "0.2.2",
+  "description": "Client-side encrypted vault for Solid pods. Zero dependencies, pure WebCrypto.",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.0",
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0",
+    "vitest": "^2.1.0"
+  }
+}
